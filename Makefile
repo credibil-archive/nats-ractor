@@ -1,7 +1,7 @@
-.PHONY: run-ractor run-nats
+.PHONY: ractor nats
 
-run-ractor:
+ractor:
 	cargo run --bin nr_ractor
 
-run-nats:
+nats:
 	cargo run --bin nr_nats

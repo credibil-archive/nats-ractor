@@ -25,19 +25,19 @@ Open 4 terminal windows:
 2. In the second window, start the Ractor cluster node:
 
     ```bash
-    $ make run-ractor
+    $ make ractor
     ```
 
 3. In the third window, start the NATS-based microservice:
 
     ```bash
-    $ make run-nats
+    $ make nats
     ```
 
 4. In the fourth window, make a NATS request:
 
     ```bash
-    $ nats request greetings "{ \"name\": \"Wibble\" }"
+    $ nats request --server="127.0.0.1:4222" greetings "{ \"name\": \"Wibble\" }"
     ```
 
 You should see a response message in the NATS CLI window as well as some output in the NATS service window to show some processing details.

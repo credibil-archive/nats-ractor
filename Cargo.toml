@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "nr_actors",
+    "nr_ractor",
+    "nr_nats",
+]
